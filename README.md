@@ -91,12 +91,32 @@ Passos realizados no projeto
 			Additional required attributes (Não precisa por nada)
 		Email provider	
 			Marque "Send email with Cognito"
-		
-      
-      
-		
-    
-   
+		Clique no Botão "Next"
+		Clique no Botão "Next"
+      		User pool name = DIOLiveUserPool
+		Initial app client
+			Marque a opção em App type
+				Public client
+			App client name = DIOLiveAppClient
+			Tags = não precisam ser adicionadas
+		Clique em "Next"
+		Revise e crie a pool
+	7.6 Vá em "App client" -> Selecione DIOLiveAppClient
+		Edit Hosted UI
+			digite na URL  = https://example.com
+		Identity providers
+			Cognito user pool
+		OAuth 2.0 grant types
+			Authorization code grant
+			Implicit grant
+      		OpenID Connect scope
+			Email, OpenID
+		Clique no botão "Save changes"
+	7.7 Volte em "Amazon Cognito -> User pools -> DIOLiveUserPool
+		Procure a opção "DomainInfo"
+		Em "Domain" -> Clique no botão "Actions" -> Create custom domain
+    			Custom Domain = [https://diolivenew2023](https://diolivenew2023.auth.us-east-1.amazoncognito.com)
+   	8
     
     
     
