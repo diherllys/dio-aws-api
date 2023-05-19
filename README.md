@@ -32,9 +32,44 @@ Passos realizados no projeto
     4.2 Service = Clique em "Choose a service" -> pesquise e selecione "DynamoDB"
     4.3 Click em "add actions" -> Digite "putItem" e clique em "ADD"
     4.4 Vá em resources  -> ADD ARN
-    4.5 vá no DynamoDB e pegue o ARN da tabela e digite na tela anterior
+    4.5 vá no DynamoDB e pegue o ARN da tabela e digite na tela anterior em "Tables" -> "DIOItems" -> Overview -> Additional info -> e copie o Amazon Resources Name (ARN)
     4.6 
     
+  5-Barra de pesquisa "Search" -> API GateWay
+    5.1 Vá em Resources -> botão "Actions"  -> Create Method "POST" e click no botão de confirmar a direita
+    5.2 Click em POST
+      Marque   "Lambda Function"
+      Marque "Use Lambda Proxy integration"
+      Lambda Region = is-east-1
+      Lambda Function = dio_put_items_function
+      Use Default Timeout = Marcado
+      Clique em "save"
+    5.3 Vá no botão "Action" e clique em "Deploy API"
+      Deployment stage
+      Stage name = developer
+      Stage description = 
+      Deployment description = 
+      Clique no botão "Deploy"
+    5.4 Clique em POST
+   
+   6-Baixe o POSTMAN e crie uma conta
+    6.1 Instale POSTMAN
+    6.2 Vá em New - Collection
+    6.3 Digite o nome da collection
+    6.4 Na collection aperte no botão ...
+    6.5 Clique em "Add request"
+    6.6 Aonde tem a "GET" mude para "POST"
+    6.7 Vá em "Body" selecione "raw" e a direita mude de "TEXT" para "JSON"
+    6.8 Digite no arquivo a informação abaixo
+      {
+        "id": "004",
+        "price": 600
+      }
+   
+    
+      
+      
+		
     
    
     
