@@ -116,8 +116,47 @@ Passos realizados no projeto
 		Procure a opção "DomainInfo"
 		Em "Domain" -> Clique no botão "Actions" -> Create custom domain
     			Custom Domain = [https://diolivenew2023](https://diolivenew2023.auth.us-east-1.amazoncognito.com)
-   	8
-    
+   	8 Vá no postman crie uma nova requsição como "GET"
+		8.1 Vá em Authorization
+			Type: OAuth 2.0
+			Add authorization = Request
+				Token =  token
+				user Token type = Acess token
+				Header Prefix = Bearer
+				Auto-refresh token = 
+				Share token = 
+				Configure New Token
+					Token name = Token
+					Grant Type = Implicit
+					Callback URL = https://example.com/
+					Authorize using browser = 
+					Auth URL = https://diolivenew2023.auth.us-east-1.amazoncognito.com/login
+					Client ID = seu ID de cliente do "App client id"
+					Scope = Email OpenID
+					State = State
+					Client Authentication = Send client credentials in body
+		8.2 Faça o processo de cadastro	e login		
+		8.3 Vai gerar o token. Copie e guarde o TOKEN
+	9 Vá em AMAZON API Gateway
+		9.1 Selecione dio_live_api_new
+			Vá em Authorizers -> Create New Authorizer
+				Name = DIOCognitoAuthorizer
+				Cognito User Pool = DIOLiveUserPool
+				Token Source = Authorization
+				Token Validation =
+				Clique em "Create"
+		9.2 Selecione "Resources" e atualize a pagina 
+		9.3  Clique em "POST" -> "Method Request"	
+			Authorization = DIOCognitoAuthorizer
+			OAuth Scopes = NONE
+			Request Validator = NONE
+			API Key Required = false
+			Confirme
+		9.4 Faça o "deploy da API" para salvar
+    	10 Vá no postman
+		10.1 no metodo POST vá em Authorization -> Marque Bearer -> Ponha o Token que você salvou -> e Clique em "Send"
+		10.2 Verifique se o item foi adicionado e se esta tudo OK
+	
     
     
  
