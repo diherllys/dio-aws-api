@@ -1,4 +1,6 @@
+
 # dio-aws-api
+<pre>
 Passos realizados no projeto
   1-Barra de pesquisa "Search" -> API GateWay
     1.1 CreateAPI - > REST API "SEM VPC" ->
@@ -156,7 +158,7 @@ Passos realizados no projeto
     	10 Vá no postman
 		10.1 no metodo POST vá em Authorization -> Marque Bearer -> Ponha o Token que você salvou -> e Clique em "Send"
 		10.2 Verifique se o item foi adicionado e se esta tudo OK
-	
+	</pre>
     
     
  
