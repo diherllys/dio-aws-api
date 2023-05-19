@@ -22,7 +22,15 @@ Passos realizados no projeto
   3.1 Ir no botão amarelo "Create function"
     Function name = dio_put_items_function
     Resto põe padrão e clica em "Create function"
-     
+  
+  3.2 Editado o arquivo index.js (O mesmo esta no repositorio)
+ 
+  3.3 Configuration -> Permissions -> Clicar em "dio_put_items_function-role-sdq15tez"
+  
+  4- Agora vamos para tela do IAM "Identity and Acess Managament"
+    4.1 Vá no botão "Add permissions" -> "Create inline policy"
+    
+    
    
     
     
