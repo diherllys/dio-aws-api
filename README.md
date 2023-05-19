@@ -12,6 +12,16 @@ Passos realizados no projeto
           Apertar no botão "Create Resources"
      
  2-Barra de pesquisa "Search" -> DynamoDB
+  2.1 Ir no botão "Create table"
+    Table name = DIOItems
+    Partition key = id [String]
+    Deixar o resto como padrão e clicar em -> "Create Table"
+    
+    
+ 3-Barra de pesquisa "Search" -> Lambda
+  3.1 Ir no botão amarelo "Create function"
+    
+    
  
 
 
