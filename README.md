@@ -20,6 +20,11 @@ Passos realizados no projeto
     
  3-Barra de pesquisa "Search" -> Lambda
   3.1 Ir no botão amarelo "Create function"
+    Function name = dio_put_items_function
+    Resto põe padrão e clica em "Create function"
+     
+   
+    
     
     
  
