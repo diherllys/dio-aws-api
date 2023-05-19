@@ -29,6 +29,11 @@ Passos realizados no projeto
   
   4- Agora vamos para tela do IAM "Identity and Acess Managament"
     4.1 Vá no botão "Add permissions" -> "Create inline policy"
+    4.2 Service = Clique em "Choose a service" -> pesquise e selecione "DynamoDB"
+    4.3 Click em "add actions" -> Digite "putItem" e clique em "ADD"
+    4.4 Vá em resources  -> ADD ARN
+    4.5 vá no DynamoDB e pegue o ARN da tabela e digite na tela anterior
+    4.6 
     
     
    
