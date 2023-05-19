@@ -50,7 +50,7 @@ Passos realizados no projeto
       Stage description = 
       Deployment description = 
       Clique no botão "Deploy"
-    5.4 Clique em POST
+    5.4 Clique em POST e copie a URL
    
    6-Baixe o POSTMAN e crie uma conta
     6.1 Instale POSTMAN
@@ -59,12 +59,21 @@ Passos realizados no projeto
     6.4 Na collection aperte no botão ...
     6.5 Clique em "Add request"
     6.6 Aonde tem a "GET" mude para "POST"
-    6.7 Vá em "Body" selecione "raw" e a direita mude de "TEXT" para "JSON"
-    6.8 Digite no arquivo a informação abaixo
+    6.7 Cole a URL do passo 5.4 no Campo a frente do "POST"
+    6.8 Vá em "Body" selecione "raw" e a direita mude de "TEXT" para "JSON"
+    6.9 Digite no arquivo a informação abaixo
       {
         "id": "004",
         "price": 600
       }
+    6.10 Clique em "SEND"
+    	Se tudo funcionou apresentará a mensagem "Item inserido com sucesso"
+    6.11 Verifique no DynamoDB se o dado foi inserido
+    7-
+    
+    	
+    
+    	
    
     
       
