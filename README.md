@@ -33,7 +33,7 @@ Passos realizados no projeto
     4.3 Click em "add actions" -> Digite "putItem" e clique em "ADD"
     4.4 Vá em resources  -> ADD ARN
     4.5 vá no DynamoDB e pegue o ARN da tabela e digite na tela anterior em "Tables" -> "DIOItems" -> Overview -> Additional info -> e copie o Amazon Resources Name (ARN)
-    4.6 
+
     
   5-Barra de pesquisa "Search" -> API GateWay
     5.1 Vá em Resources -> botão "Actions"  -> Create Method "POST" e click no botão de confirmar a direita
@@ -56,7 +56,6 @@ Passos realizados no projeto
     6.1 Instale POSTMAN
     6.2 Vá em New - Collection
     6.3 Digite o nome da collection
-      </br>
     6.4 Na collection aperte no botão ...
     6.5 Clique em "Add request"
     6.6 Aonde tem a "GET" mude para "POST"
