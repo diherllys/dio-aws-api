@@ -36,7 +36,6 @@ Passos realizados no projeto
     4.6 
     
   5-Barra de pesquisa "Search" -> API GateWay
-  </br>
     5.1 Vá em Resources -> botão "Actions"  -> Create Method "POST" e click no botão de confirmar a direita
     5.2 Click em POST
       Marque   "Lambda Function"
@@ -57,6 +56,7 @@ Passos realizados no projeto
     6.1 Instale POSTMAN
     6.2 Vá em New - Collection
     6.3 Digite o nome da collection
+      </br>
     6.4 Na collection aperte no botão ...
     6.5 Clique em "Add request"
     6.6 Aonde tem a "GET" mude para "POST"
