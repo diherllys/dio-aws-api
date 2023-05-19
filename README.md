@@ -69,13 +69,29 @@ Passos realizados no projeto
     6.10 Clique em "SEND"
     	Se tudo funcionou apresentará a mensagem "Item inserido com sucesso"
     6.11 Verifique no DynamoDB se o dado foi inserido
-    7-
-    
-    	
-    
-    	
-   
-    
+    7-Barra de pesquisa "Search" ->  Amazon Cognito
+    	7.1 Clique em User pools
+	7.2 Clique no botão "Create user pool"
+	7.3 Cognito user pool sign-in options -> Marque a opção de "Email" para login do usuário
+    	7.4 Em "Password policy mode" - > Marque Custom
+	7.5 Maque as opções abaixo
+		Contains at least 1 number
+		Contains at least 1 special character
+		Contains at least 1 uppercase letter
+		Contains at least 1 lowercase letter
+    		MFA enforcement = "No MFA"
+		User account recovery = "Enable self-service account recovery - Recommended" -> "Email only"
+		Self-service sign-up -> Self-registration (MARQUE)
+    		Cognito-assisted verification and confirmation
+			(MARQUE) Allow Cognito to automatically send messages to verify and confirm - Recommended 
+    			(MARQUE) Send email message, verify email address
+   		Verifying attribute changes
+			(MARQUE) Keep original attribute value active when an update is pending - Recommended
+    		Required attributes
+			Additional required attributes (Não precisa por nada)
+		Email provider	
+			Marque "Send email with Cognito"
+		
       
       
 		
